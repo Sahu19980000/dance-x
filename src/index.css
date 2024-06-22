@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* dance-heading */
+.dance-heading
+{
+  font-family: Cirka;
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px #000000A6;
+  background: linear-gradient(92deg, #F8605E 0.72%, #FA8C16 99.81%);
+
+}

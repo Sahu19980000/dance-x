@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Cirka:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root{
+  --primery-bg-color:#121928;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* shared component css */
+.sub-heading{
+  font-family:"Lato", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.description-box .description-text{
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* dance-heading */
+.dance-headings
+{
+  background: -webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Cirka';
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    white-space: pre-wrap;
+    /* text-shadow: 0px 2px 2px #000000; */
+  
+}
+
+.dance-button-box .dance-btn{
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  
+  background: linear-gradient(to left , #F8605E,#FA8C16);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding:10px 0px;
+}
+
+.dance-button-box .dance-btn-icon{
+  margin:0px auto;
+  display: flex;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  padding:5px 20px;
+  /* -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent; */
+}
+
+@media screen and (max-width:992px) {
+  .dance-headings{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .dance-button-box .dance-btn{
+    width: 145px;
+    height: 55px;
+    font-size: 18px;
+  }
+}
+
+/* dance-hero-section */
+
+.dance-hero-section-container{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: var(--primery-bg-color);
+  background-size: cover;
+  background-image: url('../public/img/bg-hero-section.png');
+}
+.dance-hero-section-container .sub-title{
+  font-family: 'Cirka';
+  font-size: 64px;
+  font-weight: 500;
+  color:#f97738
+}
+.dance-hero-section-container .social-media h2 {
+  height: 10em;
+  top: 45px;
+  border-left: 1px solid #827979;
+  right: 0;
+  position: absolute;
+  width: 150px;
+}
+.dance-hero-section-container .social-media .social-icon img {
+  margin: 10px 0px;
+  width: 25px;
+  height: 25px;
+}
+.arrow-icon{
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+
+}
+@keyframes arrow{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    transform: translate(0px, 10px);
+  }
+}
+
+.dance-hero-section-container .social-media .social-icon {
+  display: flex;
+    /* white-space: revert-layer; */
+    width: 164px;
+    bottom: 30px;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+}
+
+@media screen and (max-width:992px) {
+  .dance-hero-section-container .social-media{
+    display: none;
+  }
+}
+
+/* instructor*/
+#instructor_box{
+  transition-delay: 2s;
+  transition: 2s linear ease-in-out;
+}
+
+.instructor_container{
+  width: 100%;
+  height: auto;
+  background: var(--primery-bg-color);
+}
+.right-instructor{
+  height: 87vh;
+  position: relative; 
+}
+
+.right-instructor .profile-section{
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.instructor-heading{
+  font-family: 'Cirka';
+  font-size: 32px;
+  line-height: 25px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.instructor-left-container .card_box_data{
+  padding: 20px 25px;
+  box-shadow: -5px -5px 4px -2px #1B2230;
+  box-shadow: 5px 5px 4px 0px #00000040;
+  border: 1px solid #1918251A;
+  background: #FFFFFF05;
+  border-radius: 30px;
+}
+
+.instructor-left-container .card_box_data h2{
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 36px;
+  font-family: 'lato';
+  background: -webkit-linear-gradient(180deg, #4FF0F8 0%, #3693FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instructor-left-container .card_box_data p{
+  font-family: 'lato';
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+color: #A8A8A8;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* contenmporay_container*/
+.contenmporay_container{
+  padding: 20px 0px;
+  width:100%;
+  height: auto;
+  background: var(--primery-bg-color);
+}
+.contenmporay_container .contenmpory_box{
+  padding: 50px;
+  box-shadow: -2px -2px 5px 4px #0f1218;
+  height: auto;
+  border-radius: 50px;
+  background-image: linear-gradient(rgba(18, 25, 40, 0.9),rgba(18, 25, 40, 1)) ,url('./assets/bg.png') ;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.contenmporay_container .left_contemporay_container ,.contenmporay_container .right_contenmporay_container{
+  width: 100%;
+  height: auto;
+}
+
+.timer_right_contemporay{
+  margin:20px 0px;
+  font-family: 'cirka';
+  font-size: 124px;
+  font-weight: 700;
+  line-height: 61px;
+text-align: left;
+color: #2a303e;
+}
+
+@media screen and (max-width:1199px) {
+  .timer_right_contemporay{
+    font-size: 52px;
+  }
+}
+
+/* pricing-package-container */
+.pricing-package-container{
+  height: auto;
+  width: 100%;
+  background-color: var(--primery-bg-color);
+  
+}
+
+.package_container{
+  padding: 40px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 20px;
+box-shadow: -2px -2px 4px 2px #1B2230;
+}
+.package-border{
+  margin:40px 0px;
+  border-bottom: 1px solid #938f8f5f;
+}
+
+/* contact form */
+
+.contact-form-container {
+ 
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), /* Background color with transparency */
+  url('./assets/Rectangle4011.png') no-repeat center center fixed; 
+background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+
+}
+
+.contact-form-container .form-content {
+  backdrop-filter: blur(10px);
+  margin:0px auto;
+  width: 70%;
+  background: rgb(10 7 7 / 50%);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-form-container .form-content h1, .form-content h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.contact-form-container .form-control {
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff !important;
+  border:none;
+  border-bottom: 1px solid #5550506c;
+}
+
+.contact-form-container .form-control:focus{
+  background-color: transparent;
+  border: none;
+  box-shadow: none !important;
+}
+.contact-form-container .form-control::placeholder{
+  text-align: center;
+  color: #fff;
+}
+
+/* testimonial css */
+.testimonial-carousel{
+    background-color: var(--primery-bg-color);
+}
+
+
+
+
+
+

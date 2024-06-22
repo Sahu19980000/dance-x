@@ -1,0 +1,29 @@
+/* src/components/TestimonialCarousel.css */
+.testimonial-carousel {
+    text-align: center;
+    margin: 0px auto;
+    width:100%;
+  }
+  
+  .testimonial-slide {
+    padding: 20px;
+  }
+  
+  .testimonial-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .testimonial-content {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .testimonial-content h3 {
+    margin: 0;
+  }
+  
+  .testimonial-content p {
+    margin: 5px 0;
+  }
+  

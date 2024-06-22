@@ -1,0 +1,24 @@
+
+.testimonial-carousel .slick-prev {
+    right: 0 !important;
+    left:95%
+}
+.testimonial-carousel .slick-prev,.testimonial-carousel .slick-next {
+    background: linear-gradient(180deg, #4FF0F8 0%, #3693FD 100%) !important;
+    right: 0%;
+    /* left: 0%; */
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: -14%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border-radius:50px ;
+    outline: none;
+    background: transparent;
+}
