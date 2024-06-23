@@ -43,7 +43,7 @@ const Pricing_package = () => {
         <Description title="PRICING" align="center" />
         <Heading title="Find the best packages" color="#f97738" />
         <div className="row">
-          <div className="col-lg-4 border-2">
+          <div className="col-lg-4 col-md-4 border-2">
             <Package_component 
             circle_img = {circle}
             title="free" 
@@ -54,7 +54,7 @@ const Pricing_package = () => {
             textfillcolor="transparent"
             features={free} />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4">
             <Package_component 
              circle_img = {circle_two}
             title="Enterprise"
@@ -66,7 +66,7 @@ const Pricing_package = () => {
             features={Enterprise} 
             />
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4">
             <Package_component 
             circle_img = {circle}
              title="Business"

@@ -11,12 +11,7 @@ const Right_instructor = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div class="slidercircle">
-              <div class="circle-one">
-                <div class="circle-arround-one">
-                  <img src={profile} class="profile-bar" />
-                </div>
-              </div>
+          <img src={profile} class="profile-bar" />
               <div class="circle-two">
                 <a href="#">
                   <div class="circle-arround-two-1 anima">
@@ -39,7 +34,6 @@ const Right_instructor = () => {
                   </div>
                 </a>
               </div>
-            </div>
           </div>
         </div>
       </div>

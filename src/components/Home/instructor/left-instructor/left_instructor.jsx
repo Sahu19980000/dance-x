@@ -11,7 +11,7 @@ const Left_instructor = () => {
               <h2 className='instructor-heading m-4 '>What you'll learn</h2>
             </div>
             <div>
-
+              
             <List_data content="Learn technical & stylistic elements of popping."/>
               <List_data content="Control movements & transitions between styles."/>
               <List_data content="Create & perform popping combinations with personal style."/>
@@ -19,13 +19,13 @@ const Left_instructor = () => {
               <List_data content="Boost confidence expressing oneself through popping." />
            </div>
 
-           <div className='col-lg-4'>
+           <div className='col-lg-4 col-md-4'>
             <Card_box title="5000+" content="Students"/>
            </div>
-           <div className='col-lg-4'>
+           <div className='col-lg-4 col-md-4'>
            <Card_box title="450+" content="New style"/>
            </div>
-           <div className='col-lg-4'>
+           <div className='col-lg-4 col-md-4'>
            <Card_box title="100+" content="Workshops"/>
            </div>
            </div>

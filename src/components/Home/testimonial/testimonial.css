@@ -22,3 +22,19 @@
     outline: none;
     background: transparent;
 }
+.testimonial-carousel .dance-button-box {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:767px) {
+    .testimonial-carousel .slick-prev{
+        left:70%;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .testimonial-carousel .slick-prev{
+        left:90%;
+    }
+}

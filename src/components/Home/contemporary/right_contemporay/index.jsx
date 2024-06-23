@@ -19,7 +19,7 @@ const Right_contenmporay = () => {
        <Description title="Enjoy Flat 50% off on this course" align="start" style="italic"/>
        <p className='text-white my-3'>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
        <Counter />
-       <div className='d-flex '>
+       <div className='md-d-flex '>
        <Button_icon_component title="Know More "
        cliptext="none"
        textfillcolor="none"
