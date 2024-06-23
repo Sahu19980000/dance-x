@@ -19,7 +19,7 @@ const ContactForm = () => {
                     type="text"
                     className="form-control"
                     id="name"
-                    value="Harvey Spectar"
+                    placeholder="Harvey Spectar"
                     readOnly
                   />
                 </div>
