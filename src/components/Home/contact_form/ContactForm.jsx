@@ -20,7 +20,7 @@ const ContactForm = () => {
                     className="form-control"
                     id="name"
                     placeholder="Harvey Spectar"
-                    readOnly
+                    
                   />
                 </div>
                 <div className="form-group">
