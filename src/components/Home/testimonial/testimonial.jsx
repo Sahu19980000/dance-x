@@ -5,6 +5,7 @@ import testimonial_one from "../../../assets/testimonial/testimonial-one.png";
 import testimonial_two from "../../../assets/testimonial/testimonial-two.png";
 import testimonial_three from "../../../assets/testimonial/testimonial-three.png";
 import testimonial_four from "../../../assets/testimonial/testimonial-four.png";
+import playvideo from "../../../assets/play.png";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -45,7 +46,7 @@ const testimonials = [
   // Add more testimonials here
 ];
 
-const TestimonialCarousel = () => {
+const TestimonialCarousel = (props) => {
   const settings = {
     // dots: true,
     infinite: true,
@@ -65,11 +66,10 @@ const TestimonialCarousel = () => {
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-slide">
               <div className="row">
-                {/* <div className="col-lg-2 align-items-end h-100">
-                <img src={testimonial_two} className="m-2"/>
-                </div> */}
-                <div className="col-lg-6">
-                  <img src={testimonial.image} alt={testimonial.name} />
+                <div className="col-lg-6 profile-section" >
+                  <video controls className="responsive-iframe"  src={props.video} poster={testimonial.image}>
+                  <img src={playvideo} className="play-video" alt="Play Video" />
+                  </video>
                 </div>
                 <div className="col-lg-6">
                   <div className="testimonial-content text-start">

@@ -3,7 +3,7 @@ import Button_icon_component from "../../all_shared/button_icon";
 import FeaturesList from "./FeaturesList"; // New component to display features list
 
 const Package_component = (props) => {
-    console.log(props.features);
+    // console.log(props.features);
   return (
     <div className="package_container my-4">
       <div className="icon-box">

@@ -4,17 +4,18 @@ import Heading from '../../all_shared/Heading'
 import Right_instructor from './right-instructor/right-instructor'
 import Left_instructor from './left-instructor/left_instructor'
 
-const Instructor = () => {
+const Instructor = (props) => {
+  console.log(props.feature_data);
   return (
     <div className="instructor_container" id="instructor_box">
         <div className="container">
             <div className="row">
                 <div className='section-title text-center'>
                     <Sub_heading title="Instructor"/> 
-                    <Heading title="Siba Prasad (Popnflex) " color="#f97738"/>   
+                    <Heading title={props.creatorname} color="#f97738"/>   
                 </div>
                 <div className="col-lg-6">
-                   <Left_instructor />
+                   <Left_instructor feature={props.feature_data} />
                 </div>
                 <div className="col-lg-6">
                    <Right_instructor />

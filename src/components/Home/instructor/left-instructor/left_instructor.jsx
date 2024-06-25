@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import List_data from './list_data'
 import Card_box from './card_box'
+import { ThemeContext } from '../../home'
 
-const Left_instructor = () => {
+const Left_instructor = (props) => {
+  // const theme_data = useContext(ThemeContext);
+  // const [course_data,Set_coursedata] = useState();
+
+  useEffect(() => {
+    // const test = theme_data[1].data;
+    // Set_coursedata(test)
+    // console.log(course_data);
+    
+  }, [])
+
   return (
     <div className='instructor-left-container'>
         <div className="container">
@@ -12,11 +23,11 @@ const Left_instructor = () => {
             </div>
             <div>
               
-            <List_data content="Learn technical & stylistic elements of popping."/>
-              <List_data content="Control movements & transitions between styles."/>
-              <List_data content="Create & perform popping combinations with personal style."/>
-              <List_data content="Develop performance skills & stage presence."/>
-              <List_data content="Boost confidence expressing oneself through popping." />
+            <List_data content={props.feature[0]} />
+              <List_data content={props.feature[1]} />
+              <List_data content={props.feature[2]} />
+              <List_data content={props.feature[3]} />
+              <List_data content={props.feature[4]} />
            </div>
 
            <div className='col-lg-4 col-md-4'>

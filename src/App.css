@@ -9,9 +9,14 @@ body {
   --primery-bg-color:#121928;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.loader-part{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 /* shared component css */
 .sub-heading{
@@ -24,7 +29,7 @@ code {
 
 .description-box .description-text{
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   font-weight: 400;
 }

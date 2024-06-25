@@ -27,6 +27,27 @@
     justify-content: center;
 }
 
+.testimonial-carousel .profile-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-carousel .profile-section .play-video{
+    position: absolute;
+    cursor: pointer;
+
+}
+.testimonial-carousel .profile-section .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 @media screen and (max-width:767px) {
     .testimonial-carousel .slick-prev{
         left:70%;
