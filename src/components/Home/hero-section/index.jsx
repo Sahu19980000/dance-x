@@ -13,7 +13,7 @@ import Description from "../../all_shared/description";
 import Button_component from "../../all_shared/button";
 import Rating from "react-rating";
 import 'font-awesome/css/font-awesome.min.css'; 
-
+import rating_data from "../../../assets/Avatar group.png"
 
 
 const Hero_Section = (props) => {
@@ -41,14 +41,20 @@ const Hero_Section = (props) => {
               />
             </div>
             <Button_component title="Price at" />
-            <img src={reviews} className="my-3" />
-            <Rating
-            stop={5}
-            initialRating={4.2}
-          emptySymbol="fa fa-star-o fa-2x"
-         fullSymbol="fa fa-star fa-2x"
-         readonly
+            <div className="d-flex justify-content-center mt-5">
+               <img src={rating_data} height={50} className="mx-4"/>
+                <div>
+                <Rating
+            emptySymbol="fa fa-star-o fa-2x low"
+           fullSymbol="fa fa-star fa-2x high"
+           initialRating={props.rating}
+           readonly
 />
+<Description title="from 200+ reviews" />
+                </div>
+            </div>
+            
+           
             <br />
             <a href="#instructor_box"><img src={arrow_icon} className="my-3 arrow-icon" /></a>
             <div className="social-media">

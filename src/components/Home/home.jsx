@@ -44,6 +44,7 @@ const Homecomponent = () => {
     <div className='header-container'>
       <ThemeContext.Provider value={[theme]}>
         <Hero_Section 
+          rating={api_data.ratings}
           creatorname={api_data.creatorName} 
           title={api_data.title} 
           para={api_data.description} 

@@ -19,6 +19,13 @@ body {
 
 }
 /* shared component css */
+
+.fa-star-o {
+  color: #fa8227;
+}
+span.fa.fa-star.fa-2x.high {
+  color: #fa8326;
+}
 .sub-heading{
   font-family:"Lato", sans-serif;
   font-size: 24px;
@@ -150,7 +157,7 @@ body {
   display: flex;
     /* white-space: revert-layer; */
     width: 164px;
-    bottom: 30px;
+    bottom: 210px;
     right: 0;
     position: absolute;
     flex-direction: column;
