@@ -61,7 +61,7 @@ const TestimonialCarousel = (props) => {
     <div className="testimonial-carousel">
       <div className="container-fluid p-5">
       <Sub_heading title="TESTIMONIAL" />
-        <Heading title="What our student says" color="#F8605E"/>
+        <Heading title="What our student says" color="#f97738" />
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-slide">

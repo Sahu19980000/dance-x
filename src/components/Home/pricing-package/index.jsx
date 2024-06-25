@@ -5,6 +5,7 @@ import Package_component from './package'
 import { ThemeContext } from '../home'
 import circle from "../../../assets/circle-one.png";
 import circle_two from "../../../assets/circle-two.png"
+import Sub_heading from '../../all_shared/sub_heading'
 
 const Pricing_package = () => {
   const [theme, setTheme] = useState('transparent');
@@ -40,8 +41,11 @@ const Pricing_package = () => {
   return (
     <div className='pricing-package-container py-4'>
       <div className="container">
-        <Description title="PRICING" align="center" />
-        <Heading title="Find the best packages" color="#f97738" />
+        <div className='text-center'>
+        <Sub_heading title="PRICING" align="center" />
+        </div>
+       
+        <Heading title="Find the best packages"/>
         <div className="row">
           <div className="col-lg-4 col-md-4 border-2">
             <Package_component 
