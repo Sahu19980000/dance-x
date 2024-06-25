@@ -53,7 +53,7 @@ const Homecomponent = () => {
           creatorname={api_data.creatorName} 
           feature_data={api_data.keyLearnings} 
         />
-        <Contenmporay />
+        <Contenmporay rating={api_data.ratings}/>
         <Pricing_package />
         <TestimonialCarousel video={api_data.coursePreviewUrl}/>
         <ContactForm />
