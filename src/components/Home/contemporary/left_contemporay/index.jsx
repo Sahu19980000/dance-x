@@ -10,8 +10,8 @@ const Left_contemporay = (props) => {
   return (
     <div className="left_contemporay_container p-4">
       <img src={contemony_image} className="img-fluid" />
-      <div className="d-flex justify-content-center mt-5">
-        <img src={rating_data} height={50} className="mx-4" />
+      <div className="d-flex flex-md-row justify-content-center mt-5 flex-column">
+        <img src={rating_data} height={50} className="mx-4 contemporay-img-responsive" />
         <div>
           <Rating
             emptySymbol="fa fa-star-o fa-2x low"
@@ -19,6 +19,7 @@ const Left_contemporay = (props) => {
             initialRating={props.ratingdata}
             readonly
           />
+         
           <Description title="from 200+ reviews" />
         </div>
       </div>

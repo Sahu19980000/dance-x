@@ -45,7 +45,7 @@ const Pricing_package = () => {
         <Sub_heading title="PRICING" align="center" />
         </div>
        
-        <Heading title="Find the best packages"/>
+        <Heading title="Find the best packages" color="#f97738" />
         <div className="row">
           <div className="col-lg-4 col-md-4 border-2">
             <Package_component 

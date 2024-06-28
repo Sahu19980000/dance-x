@@ -6,7 +6,7 @@ import TestimonialCarousel from './testimonial/testimonial';
 import Pricing_package from './pricing-package';
 import ContactForm from './contact_form/ContactForm';
 import axios from 'axios';
-import Loader from "../../assets/loading.gif";
+import Loader from "../../assets/loader-one.gif";
 
 export const ThemeContext = createContext('light');
 
@@ -32,7 +32,7 @@ const Homecomponent = () => {
 
   if (loading) {
     return <div className='loader-part'>
-         <img src={Loader} />
+         <img src={Loader} width/>
     </div>;
   }
 
@@ -53,7 +53,7 @@ const Homecomponent = () => {
           creatorname={api_data.creatorName} 
           feature_data={api_data.keyLearnings} 
         />
-        <Contenmporay rating={api_data.ratings}/>
+        <Contenmporay rating={api_data.ratings} />
         <Pricing_package />
         <TestimonialCarousel video={api_data.coursePreviewUrl}/>
         <ContactForm />
