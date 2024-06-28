@@ -13,7 +13,8 @@ const Package_component = (props) => {
             {props.title} <br />
             {props.content}
           </span>
-          <h1 className="text-white fs-2">{props.price}</h1>
+          <h1 className="text-white fs-2"><b>{props.discountprice}</b></h1>
+          <h3 className="text-white" style={{textDecoration:"line-through"}}>{props.price}</h3>
         </div>
         
         <Button_icon_component title="Get Started" 

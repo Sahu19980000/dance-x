@@ -18,10 +18,11 @@ const Homecomponent = () => {
   useEffect(() => {
     const get_data = async () => {
       try {
-        const { data } = await axios.get('https://dancex.in/api/courses/4BHwWEDe87vUoRG4NThx');
+        const { data } = await axios.get('https://dancex.in/api/courses/wm4rscT6Ly8JWq9EiFfV');
         setApi_data(data);
         setLoading(false);
-        console.log(data);
+        console.log('home data',api_data.packages[0].title);
+        console.log('home data',data);
       } catch (err) {
         console.log(err);
         setLoading(false);
@@ -54,7 +55,18 @@ const Homecomponent = () => {
           feature_data={api_data.keyLearnings} 
         />
         <Contenmporay rating={api_data.ratings} />
-        <Pricing_package />
+        <Pricing_package 
+        title={api_data.packages[0].type}
+        content={api_data.packages[0].subtitle}
+        discountprice={api_data.packages[0].discountedPrice}
+        price={api_data.packages[0].price}
+        
+        title2={api_data.packages[1].type}
+        content2={api_data.packages[1].subtitle}
+        discountprice2={api_data.packages[1].discountedPrice}
+        price2={api_data.packages[1].price}
+        
+        />
         <TestimonialCarousel video={api_data.coursePreviewUrl}/>
         <ContactForm />
       </ThemeContext.Provider>

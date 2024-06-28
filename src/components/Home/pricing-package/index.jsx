@@ -7,7 +7,7 @@ import circle from "../../../assets/circle-one.png";
 import circle_two from "../../../assets/circle-two.png"
 import Sub_heading from '../../all_shared/sub_heading'
 
-const Pricing_package = () => {
+const Pricing_package = (props) => {
   const [theme, setTheme] = useState('transparent');
   const value = useContext(ThemeContext);
 
@@ -50,9 +50,10 @@ const Pricing_package = () => {
           <div className="col-lg-4 col-md-4 border-2">
             <Package_component 
             circle_img = {circle}
-            title="free" 
-            content="Best for personal use." 
-            price="Free"
+            title={props.title} 
+            content={props.content}
+            price={props.price}
+            discountprice={props.discountprice}
             theme='-webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16)'
             cliptext="text " 
             textfillcolor="transparent"
@@ -61,26 +62,17 @@ const Pricing_package = () => {
           <div className="col-lg-4 col-md-4">
             <Package_component 
              circle_img = {circle_two}
-            title="Enterprise"
-            content="For large teams & corporations."
-            price="$20 /per month"
+             title={props.title2} 
+             content={props.content2}
+             price={props.price2}
+             discountprice={props.discountprice2}
             theme='-webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16)' 
             cliptext="none " 
             textfillcolor="none"
             features={Enterprise} 
             />
           </div>
-          <div className="col-lg-4 col-md-4">
-            <Package_component 
-            circle_img = {circle}
-             title="Business"
-             content="Best for business owners."
-             price="$120 /per month"
-             theme='-webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16)'
-              cliptext="text " 
-            textfillcolor="transparent"
-            features={Business} />
-          </div>
+          
         </div>
       </div>
     </div>

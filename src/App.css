@@ -250,6 +250,11 @@ color: #A8A8A8;
     transform: rotate(360deg);
   }
 }
+@media screen and (min-width:375px) and(max-width:767px) {
+  .right-instructor{
+    background-size: auto;
+  }
+}
 
 @media screen and (max-width:1024px) {
   .right-instructor{
@@ -313,6 +318,10 @@ color: #2a303e;
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 425px) { /* Extra small and small devices */
+  .contemporay-img-responsive { width: 100% !important; }
+}
+
 @media (max-width: 767.98px) { /* Extra small and small devices */
   .contemporay-img-responsive { width: 50% !important; }
 }
