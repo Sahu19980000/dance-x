@@ -6,7 +6,7 @@ import TestimonialCarousel from './testimonial/testimonial';
 import Pricing_package from './pricing-package';
 import ContactForm from './contact_form/ContactForm';
 import axios from 'axios';
-import Loader from "../../assets/loader-one.gif";
+import Loader from "../../assets/loader.gif";
 
 export const ThemeContext = createContext('light');
 
@@ -32,7 +32,7 @@ const Homecomponent = () => {
 
   if (loading) {
     return <div className='loader-part'>
-         <img src={Loader} width/>
+         <img src={Loader} width="450" height="350"/>
     </div>;
   }
 
