@@ -201,11 +201,11 @@ span.fa.fa-star.fa-2x.high {
   position: relative; 
 }
 
-.right-instructor .profile-section{
+/* .right-instructor .profile-section{
   position: absolute;
   top: 0;
   left: 50px;
-}
+} */
 
 .instructor-heading{
   font-family: 'Cirka';

@@ -21,14 +21,16 @@ const Homecomponent = () => {
         const { data } = await axios.get('https://dancex.in/api/courses/wm4rscT6Ly8JWq9EiFfV');
         setApi_data(data);
         setLoading(false);
-        console.log('home data',api_data.packages[0].title);
+        console.log('home data',api_data);
         console.log('home data',data);
       } catch (err) {
         console.log(err);
         setLoading(false);
       }
     };
+
     get_data();
+
   }, []);
 
   if (loading) {
@@ -53,6 +55,7 @@ const Homecomponent = () => {
         <Instructor 
           creatorname={api_data.creatorName} 
           feature_data={api_data.keyLearnings} 
+          video={api_data.coursePreviewUrl}
         />
         <Contenmporay rating={api_data.ratings} />
         <Pricing_package 
@@ -65,9 +68,13 @@ const Homecomponent = () => {
         content2={api_data.packages[1].subtitle}
         discountprice2={api_data.packages[1].discountedPrice}
         price2={api_data.packages[1].price}
-        
         />
-        <TestimonialCarousel video={api_data.coursePreviewUrl}/>
+
+        <TestimonialCarousel 
+        video={api_data.coursePreviewUrl} 
+        poster={api_data.courseThumbnailUrl}
+        />
+
         <ContactForm />
       </ThemeContext.Provider>
     </div>

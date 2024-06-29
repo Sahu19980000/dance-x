@@ -7,9 +7,14 @@ import Left_instructor from './left-instructor/left_instructor'
 const Instructor = (props) => {
   console.log(props.feature_data);
   return (
-    <div className="instructor_container" id="instructor_box">
+    <div className="instructor_container " id="instructor_box">
         <div className="container">
             <div className="row">
+
+            <video controls className="responsive-iframe my-5" src={props.video} >
+                  
+            </video>
+
                 <div className='section-title text-center'>
                     <Sub_heading title="Instructor"/> 
                     <Heading title={props.creatorname} color="#f97738"/>   

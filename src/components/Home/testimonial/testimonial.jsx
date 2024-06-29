@@ -67,14 +67,14 @@ const TestimonialCarousel = (props) => {
             <div key={testimonial.id} className="testimonial-slide">
               <div className="row">
                 <div className="col-lg-6 profile-section" >
-                  <video controls className="responsive-iframe"  src={props.video} poster={testimonial.image}>
+                  {console.log(props.poster)}
+                  <video controls className="responsive-iframe"  src={props.video} poster={props.poster} height={450}>
                   <img src={playvideo} className="play-video" alt="Play Video" />
                   </video>
                 </div>
                 <div className="col-lg-6">
                   <div className="testimonial-content text-start">
-                    <Sub_heading title={testimonial.name}/>
-                   
+                    <Sub_heading title={testimonial.name} />
                     <Description title={testimonial.year} />
                     <Description title={testimonial.message} />
                     <ul className="d-flex my-2 mx-0 " style={{listStyleType:'none' ,textAlign:"start"}}>
@@ -96,7 +96,7 @@ const TestimonialCarousel = (props) => {
                   cliptext="none " 
                   textfillcolor="none"
                   />
-                </div>
+        </div>
       </div>
     </div>
   );
