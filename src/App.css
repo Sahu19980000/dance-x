@@ -309,6 +309,10 @@ text-align: left;
 color: #2a303e;
 }
 
+.logo{
+  text-align: center;
+}
+
 @media screen and (max-width:1199px) {
   .timer_right_contemporay{
     font-size: 52px;
@@ -321,17 +325,18 @@ color: #2a303e;
 }
 @media (max-width: 425px) { /* Extra small and small devices */
   .contemporay-img-responsive { width: 100% !important; }
+
   .logo{
     text-align: start;
-
   }
+
   .logo img{
     width: 100px;
     height: auto;
   }
   .dance-headings{
     font-size: 20px;
- }
+  }
 }
 
 @media (max-width: 767.98px) { /* Extra small and small devices */
