@@ -179,6 +179,7 @@ span.fa.fa-star.fa-2x.high {
   
 }
 
+
 /* instructor*/
 #instructor_box{
   transition-delay: 2s;
@@ -320,13 +321,46 @@ color: #2a303e;
 }
 @media (max-width: 425px) { /* Extra small and small devices */
   .contemporay-img-responsive { width: 100% !important; }
+  .logo{
+    text-align: start;
+
+  }
+  .logo img{
+    width: 100px;
+    height: auto;
+  }
+  .dance-headings{
+    font-size: 20px;
+ }
 }
 
 @media (max-width: 767.98px) { /* Extra small and small devices */
   .contemporay-img-responsive { width: 50% !important; }
+  .logo{
+    text-align: start;
+    margin: 20px 0px;
+  }
+  .logo img{
+    width: 100px;
+    height: auto;
+  }
+  .dance-headings , .dance-hero-section-container .sub-title{
+     font-size: 20px !important;
+  }
+  .responsive-iframe{
+    width: 100%;
+  }
+  
+  
 }
 @media (min-width: 768px) { /* Medium and larger devices */
   .contemporay-img-responsive { width: 25% !important; }
+  .responsive-iframe{
+    width: 100%;
+  }
+  .logo{
+    margin:40px 0px;
+  }
 }
 
 /* pricing-package-container */

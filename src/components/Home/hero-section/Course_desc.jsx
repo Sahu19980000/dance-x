@@ -11,7 +11,7 @@ const Course_desc = ({text}) => {
     return (
       <div>
         <p className='text-white'>
-          {isReadMore ? `${text.slice(0, 300)}...` : text}
+          {isReadMore ? `${text.slice(0, 100)}...` : text}
           <span onClick={toggleReadMore} style={{ color: '#fa8326', cursor: 'pointer' }}>
             {isReadMore ? ' Read More' : ' Read Less'}
           </span>

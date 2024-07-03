@@ -51,11 +51,12 @@ const Homecomponent = () => {
           creatorname={api_data.creatorName} 
           title={api_data.title} 
           para={api_data.description} 
+          video={api_data.coursePreviewUrl}
         />
         <Instructor 
           creatorname={api_data.creatorName} 
           feature_data={api_data.keyLearnings} 
-          video={api_data.coursePreviewUrl}
+          
         />
         <Contenmporay rating={api_data.ratings} />
         <Pricing_package 

@@ -10,13 +10,8 @@ const Instructor = (props) => {
     <div className="instructor_container " id="instructor_box">
         <div className="container">
             <div className="row">
-
-            <video controls className="responsive-iframe my-5" src={props.video} >
-                  
-            </video>
-
                 <div className='section-title text-center'>
-                    <Sub_heading title="Instructor"/> 
+                    <Sub_heading title="Course By"/> 
                     <Heading title={props.creatorname} color="#f97738"/>   
                 </div>
                 <div className="col-lg-6">
