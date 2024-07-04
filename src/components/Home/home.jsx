@@ -7,6 +7,7 @@ import Pricing_package from './pricing-package';
 import ContactForm from './contact_form/ContactForm';
 import axios from 'axios';
 import Loader from "../../assets/loader.gif";
+import Mobile_bar from './mobile_bar/Mobile_bar';
 
 export const ThemeContext = createContext('light');
 
@@ -77,6 +78,7 @@ const Homecomponent = () => {
         />
 
         <ContactForm />
+        <Mobile_bar price={api_data.price}/>
       </ThemeContext.Provider>
     </div>
   );

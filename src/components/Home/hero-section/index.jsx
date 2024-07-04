@@ -32,14 +32,14 @@ const Hero_Section = (props) => {
 
             <Heading title={props.title} color="white" textalign="center" />
             <p className="sub-title">{props.creatorname}</p>
-            <div style={{ width: "75%", margin: "0px auto" }}>
+            <div className="video-section">
               <Course_desc text={props.para} />
               <video controls className="responsive-iframe my-5" src={props.video} >
                   
             </video>
             </div>
             <Button_component title="Price at" />
-            <div className="d-flex justify-content-center mt-5">
+            <div className="d-md-flex justify-content-center mt-5">
               <img src={rating_data} height={50} className="mx-4" />
               <div>
                 <Rating

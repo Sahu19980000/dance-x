@@ -59,7 +59,7 @@ const TestimonialCarousel = (props) => {
 
   return (
     <div className="testimonial-carousel">
-      <div className="container-fluid p-5">
+      <div className="container-fluid p-md-5 py-5">
       <Sub_heading title="TESTIMONIAL" />
         <Heading title="What our student says" color="#f97738" />
         <Slider {...settings}>
