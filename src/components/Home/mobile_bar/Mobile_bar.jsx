@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button_component from "../../all_shared/button";
+import whatspp from "../../../assets/whatspp.gif"
 
 const Mobile_bar = (props) => {
+
+  const[Whatspp_show,Setwhatspp] = useState(false)
+  
+  useEffect(() => {
+    
+    //
+    setInterval(() => {
+      console.log('useeeffect call' );
+      Setwhatspp(true)
+    }, 10000);
+
+  }, [])
+  
+  
   return (
     <div className="mobile-bar-container">
       <div className="container-fluid">
         <div className="row">
+          <div className="col-12">
+            {
+              Whatspp_show ?<img src={whatspp} className="whatss-icon"/>:''
+            }
+             
+          </div>
           <div className="col-8 col-sm-6">
             <div className="w-100 d-flex">
               <h5>₹999</h5>
