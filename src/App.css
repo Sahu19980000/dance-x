@@ -471,13 +471,18 @@ span.fa.fa-star.fa-2x.high {
     width: 100%;
   }
   .mobile-bar-container{
-
-    width: -webkit-fill-available;
+    background-color: #363839;
     bottom: 0;
-    position: fixed;
+    display: block;
     padding: 20px 10px;
-    display: block ;
-     background-color: #363839;
+    position: sticky;
+    width: -webkit-fill-available;
+  }
+  .contact-form-container{
+    padding-top:50px;
+  }
+  .contact-form-container .form-content{
+    width: 100%;
   }
   .mobile-bar-container h3{
     padding: 0px 10px;

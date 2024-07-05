@@ -6,7 +6,7 @@ import Button_icon_component from "../../all_shared/button_icon";
 const ContactForm = () => {
   return (
     <div className="contact-form-container d-flex flex-column">
-      <div className="container">
+      <div className="container ">
         <Description title="Don't waste time" />
         <Heading title="Let's talk to an Expert" color="#f97738" />
         <div className="row">
