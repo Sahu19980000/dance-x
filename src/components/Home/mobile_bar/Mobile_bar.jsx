@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button_component from "../../all_shared/button";
 import whatspp from "../../../assets/whatspp.gif"
 
+
 const Mobile_bar = (props) => {
 
   const[Whatspp_show,Setwhatspp] = useState(false)
@@ -23,7 +24,7 @@ const Mobile_bar = (props) => {
         <div className="row">
           <div className="col-12">
             {
-              Whatspp_show ?<img src={whatspp} className="whatss-icon"/>:''
+              Whatspp_show ?<a href="https://wa.me/9717163232"><img src={whatspp} className="whatss-icon"/></a>:''
             }
              
           </div>
