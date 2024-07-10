@@ -53,6 +53,7 @@ const Homecomponent = () => {
           title={api_data.title} 
           para={api_data.description} 
           video={api_data.coursePreviewUrl}
+          price={api_data.price}
         />
         <Instructor 
           creatorname={api_data.creatorName} 

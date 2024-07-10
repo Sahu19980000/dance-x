@@ -30,15 +30,22 @@ const Hero_Section = (props) => {
               <img src={logo} alt="logo" />
             </div>
 
-            <Heading title={props.title} color="white" textalign="center" />
-            <p className="sub-title">{props.creatorname}</p>
+            <Heading title={props.title} color="#fa8227" textalign="center" />
+            <p className="sub-title">{'By the '+props.creatorname}</p>
             <div className="video-section">
               <Course_desc text={props.para} />
-              <video controls className="responsive-iframe my-5" src={props.video} >
+              <video 
+               controls 
+               autoPlay 
+               className="responsive-iframe my-5" 
+               src={props.video}
+               muted
+              
+              >
                   
             </video>
             </div>
-            <Button_component title="Price at" />
+            <Button_component title="Price start at ₹799" />
             <div className="d-md-flex justify-content-center mt-5">
               <img src={rating_data} height={50} className="mx-4" />
               <div>
