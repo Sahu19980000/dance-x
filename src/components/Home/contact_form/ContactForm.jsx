@@ -12,8 +12,9 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="form-content">
-              <form>
-                <div className="form-group">
+              
+                <iframe className="contact-frame" src="https://forms.zohopublic.in/dancex509/form/ContactFormCourseLandingPage/formperma/aZWDlIDMwlFvaNbjQESB-teTzcCw4EkwMYPqMaKJv3U?zf_rszfm=1%27;" />
+                {/* <div className="form-group">
                   <label htmlFor="name">Your good name</label>
                   <input
                     type="text"
@@ -42,13 +43,13 @@ const ContactForm = () => {
                     id="contact"
                     placeholder="Enter your contact number"
                   />
-                </div>
-                <Button_icon_component  
+                </div> */}
+                {/* <Button_icon_component  
                 title="Talk to Us" 
                 theme='-webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16)' 
                 cliptext="none !important" 
-                textfillcolor="none !important"/>
-              </form>
+                textfillcolor="none !important"/> */}
+             
             </div>
           </div>
         </div>

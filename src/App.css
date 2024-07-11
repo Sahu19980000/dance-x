@@ -342,12 +342,13 @@ span.fa.fa-star.fa-2x.high {
 }
 
 .contact-form-container .form-content {
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   margin: 0px auto;
   width: 70%;
-  background: rgb(10 7 7 / 50%);
+  
   padding: 30px;
   border-radius: 10px;
+  height: 500px;
 }
 .contact-form-container .form-content .dance-button-box {
   display: flex;
@@ -577,5 +578,15 @@ span.fa.fa-star.fa-2x.high {
     font-weight: 500;
     color: #f97738;
     line-height: 60px;
+  }
+  .responsive-iframe {
+    width: 100%;
+  }
+  .mobile-bar-container{
+    display: none;
+  }
+  .contact-frame{
+    width: 100%;
+    height: 100%;
   }
 }
