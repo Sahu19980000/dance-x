@@ -6,10 +6,7 @@
     font-size: 40px;
     color: #fff;
 }
-.profile-bar{
-    width: -webkit-fill-available;;
-    z-index: 0;
-}
+
 
 .slidercircle {
     margin-top: 70px;
@@ -274,6 +271,7 @@
 @media screen and (max-width:1024px) {
     
     .circle-arround-two-1 ,.circle-arround-two-2 , .circle-arround-two-3 ,.circle-arround-two-4  {
+        display: none;
         z-index: 0;
         transform: none;
         animation: none;

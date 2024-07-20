@@ -16,6 +16,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+iframe {
+  width: -webkit-fill-available;
+  border: 0;
+}
 /* shared component css */
 
 .fa-star-o {
@@ -185,15 +189,6 @@ span.fa.fa-star.fa-2x.high {
   height: auto;
   background: var(--primery-bg-color);
 }
-.right-instructor {
-  background-position: center;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 450px;
-  background-image: url("./assets/bg-round.png");
-  height: auto;
-  position: relative;
-}
 
 /* .right-instructor .profile-section{
   position: absolute;
@@ -243,17 +238,17 @@ span.fa.fa-star.fa-2x.high {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 375px) and(max-width:767px) {
-  .right-instructor {
+@media screen and (min-width: 320px) and(max-width:767px) {
+
+  .right-instructor,.profile-bar{
+    width: -webkit-fill-available;;
+    z-index: 0;
+    display: none !important;
     background-size: auto;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .right-instructor {
-    background-size: 350px;
-  }
-}
+
 
 /* contenmporay_container*/
 
@@ -333,7 +328,7 @@ span.fa.fa-star.fa-2x.high {
     /* Background color with transparency */ url("./assets/Rectangle4011.png")
       no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,10 +386,166 @@ span.fa.fa-star.fa-2x.high {
   background-color: var(--primery-bg-color);
 }
 
+@media (max-width: 425px) {
+  /* Extra small and small devices */
+  .contemporay-img-responsive {
+    width: 55% !important;
+  }
 
+  .logo {
+    text-align: start;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  .dance-headings {
+    font-size: 28px;
+  }
+  .dance-hero-section-container .sub-title {
+    font-size: 15px !important;
+    color: #fa8227;
+  }
+  
+  .mobile-bar-container h3{
+    
+    font-size: 24px ;
+  }
+  
+  .mobile-bar-container .offer-time{
+    
+    font-size: 16px ;
+  }
+  .mobile-bar-container p{
+    color: #fff;
+  }
+  .dance-button-box .dance-btn{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Extra small and small devices */
+  .contemporay-img-responsive {
+    width: 30% !important;
+  }
+  .logo {
+    text-align: start;
+    margin: 20px 0px;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  .dance-heading-box .sub-title{
+    font-size: 15px !important;
+    line-height: 0px;
+  }
+  .dance-headings {
+    font-size: 28px !important;
+    line-height: 1;
+  }
+  .responsive-iframe {
+    width: 100%;
+  }
+  .mobile-bar-container{
+    background-color: #363839;
+    bottom: 0;
+    display: block;
+    padding: 20px 10px;
+    position: sticky;
+    width: -webkit-fill-available;
+  }
+
+  .contact-form-container{
+    padding-top:30px;
+  }
+  .contact-form-container .form-content{
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .mobile-bar-container h3{
+    padding: 0px 10px;
+    color: #fa8c16;
+    font-size: 15px ;
+  }
+  .mobile-bar-container h5{
+    font-size: 15px;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  .mobile-bar-container .offer-time{
+    color: #fa8c16 ;
+  }
+  .mobile-bar-container p{
+    font-size: 12px;
+    color: #fff;
+  }
+  .dance-button-box .dance-btn{
+    padding: 5px 10px;
+        font-size: 15px;
+  }
+
+  ul.features-list {
+    padding: 0;
+  }
+  .mobile-bar-container .whatss-icon {
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    width:50px;
+    height: 50px;
+    animation: MyDiv;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+  }
+  .contenmporay_container{
+    padding:50px 20px !important;
+  }
+
+  .left_contemporay_container{
+    
+    display: none;
+  }
+ 
+  @keyframes MyDiv {
+    0%   {right: 0px; top: -50px;}
+    25%  {right: 50px; top: -50px;}
+  }
+
+  .profile-bar{
+    width: -webkit-fill-available;;
+    z-index: 0;
+    display: none;
+  }
+  iframe.contact-frame{
+    height: 400px;
+    overflow-y: scroll;
+  }
+  
+}
 
 @media (min-width: 768px) and (max-width:1199px) {
   /* Medium and larger devices */
+
+  .right-instructor {
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-image: url("./assets/bg-round.png");
+  height: auto;
+  position: relative;
+}
+.profile-bar{
+  width: -webkit-fill-available;;
+  z-index: 0;
+}
   .contemporay-img-responsive {
     width: 25% !important;
   }
@@ -426,7 +577,7 @@ span.fa.fa-star.fa-2x.high {
 
 .mobile-bar-container .offer-time{
   color: #fa8227 !important;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: bold;
 }
 .mobile-bar-container p{
@@ -434,130 +585,7 @@ span.fa.fa-star.fa-2x.high {
 }
 }
 
-@media (max-width: 767.98px) {
-  /* Extra small and small devices */
-  .contemporay-img-responsive {
-    width: 30% !important;
-  }
-  .logo {
-    text-align: start;
-    margin: 20px 0px;
-  }
-  .logo img {
-    width: 100px;
-    height: auto;
-  }
-  .dance-heading-box .sub-title{
-    font-size: 20px !important;
-    line-height: 0px;
-  }
-  .dance-headings {
-    font-size: 20px !important;
-    line-height: 1;
-  }
-  .responsive-iframe {
-    width: 100%;
-  }
-  .mobile-bar-container{
-    background-color: #363839;
-    bottom: 0;
-    display: block;
-    padding: 20px 10px;
-    position: sticky;
-    width: -webkit-fill-available;
-  }
-  .contact-form-container{
-    padding-top:50px;
-  }
-  .contact-form-container .form-content{
-    width: 100%;
-  }
-  .mobile-bar-container h3{
-    padding: 0px 10px;
-    color: #fa8c16;
-    font-size: 28px ;
-  }
-  .mobile-bar-container h5{
-    color: #fff;
-    text-decoration: line-through;
-  }
-  
-  .mobile-bar-container .offer-time{
-    color: #fa8c16 ;
-    font-size: 21px ;
-  }
-  .mobile-bar-container p{
-    color: #fff;
-  }
-  .dance-button-box .dance-btn{
-    padding: 10px 25px;
-  }
 
-  ul.features-list {
-    padding: 0;
-  }
-  .mobile-bar-container .whatss-icon {
-    position: absolute;
-    top: -50px;
-    right: 25px;
-    width:50px;
-    height: 50px;
-    animation: MyDiv;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-direction: normal;
-  }
-  .contenmporay_container{
-    padding:50px 20px !important;
-  }
-
-  .left_contemporay_container{
-    
-    display: none;
-  }
- 
-  @keyframes MyDiv {
-    0%   {right: 0px; top: -50px;}
-    25%  {right: 50px; top: -50px;}
-  }
-  
-}
-
-@media (max-width: 425px) {
-  /* Extra small and small devices */
-  .contemporay-img-responsive {
-    width: 55% !important;
-  }
-
-  .logo {
-    text-align: start;
-  }
-
-  .logo img {
-    width: 100px;
-    height: auto;
-  }
-  .dance-headings {
-    font-size: 20px;
-  }
-  
-  .mobile-bar-container h3{
-    
-    font-size: 24px ;
-  }
-  
-  .mobile-bar-container .offer-time{
-    
-    font-size: 16px ;
-  }
-  .mobile-bar-container p{
-    color: #fff;
-  }
-  .dance-button-box .dance-btn{
-    padding: 10px;
-  }
-}
 
 @media screen and (max-width: 1199px) {
   .timer_right_contemporay {
@@ -571,6 +599,10 @@ span.fa.fa-star.fa-2x.high {
 }
 
 @media screen and (min-width:1199px) {
+
+  .dance-headings{
+    font-size: 64px;
+  }
 
   .dance-hero-section-container .sub-title {
     font-family: "Cirka";
