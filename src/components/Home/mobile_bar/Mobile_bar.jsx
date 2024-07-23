@@ -19,7 +19,7 @@ const Mobile_bar = (props) => {
   
   
   return (
-    <div className="mobile-bar-container">
+    <div className="mobile-bar-container rounded-3">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">

@@ -5,7 +5,7 @@ import FeaturesList from "./FeaturesList"; // New component to display features 
 const Package_component = (props) => {
     // console.log(props.features);
   return (
-    <div className="package_container my-4">
+    <div className="package_container my-4 rounded-3">
       <div className="icon-box">
         <img src={props.circle_img} className="my-3" />
         <div className="my-3">

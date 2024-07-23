@@ -76,7 +76,7 @@ const TestimonialCarousel = (props) => {
                   <div className="testimonial-content text-start">
                     <Sub_heading title={testimonial.name} />
                     <Description title={testimonial.year} />
-                    <Description title={testimonial.message} />
+                    <Description title={testimonial.message} size="15px"/>
                     <ul className="d-flex my-2 mx-0 " style={{listStyleType:'none' ,textAlign:"start"}}>
                     {testimonial.other_testimonial.map((item, index) => (
                      <li key={index} className="my-3">

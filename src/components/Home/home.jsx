@@ -8,6 +8,7 @@ import ContactForm from './contact_form/ContactForm';
 import axios from 'axios';
 import Loader from "../../assets/loader.gif";
 import Mobile_bar from './mobile_bar/Mobile_bar';
+import Facts from './facts';
 
 export const ThemeContext = createContext('light');
 
@@ -47,7 +48,12 @@ const Homecomponent = () => {
   return (
     <div className='header-container'>
       <ThemeContext.Provider value={[theme]}>
-        <Hero_Section 
+       
+        <Instructor 
+          creatorname={api_data.creatorName} 
+          feature_data={api_data.keyLearnings} 
+        />
+         <Hero_Section 
           rating={api_data.ratings}
           creatorname={api_data.creatorName} 
           title={api_data.title} 
@@ -55,12 +61,13 @@ const Homecomponent = () => {
           video={api_data.coursePreviewUrl}
           price={api_data.price}
         />
-        <Instructor 
-          creatorname={api_data.creatorName} 
-          feature_data={api_data.keyLearnings} 
-          
+        <Facts />
+
+        <TestimonialCarousel 
+        video={api_data.coursePreviewUrl} 
+        poster={api_data.courseThumbnailUrl}
         />
-        <Contenmporay rating={api_data.ratings} />
+        {/* <Contenmporay rating={api_data.ratings} /> */}
         <Pricing_package 
         title={api_data.packages[0].type}
         content={api_data.packages[0].subtitle}
@@ -73,10 +80,7 @@ const Homecomponent = () => {
         price2={api_data.packages[1].price}
         />
 
-        <TestimonialCarousel 
-        video={api_data.coursePreviewUrl} 
-        poster={api_data.courseThumbnailUrl}
-        />
+      
 
         <ContactForm />
         <Mobile_bar price={api_data.price}/>

@@ -39,15 +39,15 @@ span.fa.fa-star.fa-2x.high {
 
 .description-box .description-text {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #ffffff;
   font-weight: 400;
 }
 
 /* dance-heading */
 .dance-headings {
-  font-family: "Cirka";
-  font-size: 62px;
+  font-family: 'Roboto';
+  font-size: 48px;
   font-weight: 500;
   line-height: 70px;
   letter-spacing: -0.02em;
@@ -58,30 +58,29 @@ span.fa.fa-star.fa-2x.high {
 }
 
 .dance-button-box .dance-btn {
-  width: 200px;
+  width: auto;
   height: auto;
   border-radius: 20px;
-  border: 1px solid #fff;
-
   background: linear-gradient(to left, #f8605e, #fa8c16);
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px;
+  border-style: none;
 }
 
 .dance-button-box .dance-btn-icon {
   display: flex;
-
+  border-style: none;
   height: auto;
-  border-radius: 20px;
-  border: 1px solid #fff;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   text-align: center;
-  padding: 5px 20px;
+  padding: 5px 10px 10px 10px;
+  border:1px solid #fa7e2d !important;
+
   /* -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent; */
 }
@@ -281,12 +280,10 @@ span.fa.fa-star.fa-2x.high {
 }
 .contenmporay_container .contenmpory_box {
   position: relative;
-  background-color: #121928;
+  background-color: rgb(85, 94, 108);
   overflow: hidden;
   padding: 20px;
-  box-shadow: -2px -2px 5px 4px #0f1218;
   height: auto;
-  border-radius: 50px;
 }
 
 .contenmporay_container .left_contemporay_container,
@@ -309,20 +306,32 @@ span.fa.fa-star.fa-2x.high {
   text-align: center;
 }
 
+.card_box_data {
+  background-color: #545d6b;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.card_box_data h2 ,.card_box_data p{
+  color:#fff;
+}
+
 /* pricing-package-container */
 .pricing-package-container {
   height: auto;
   width: 100%;
   background-color: var(--primery-bg-color);
+  padding: 20px;
 }
 
 .package_container {
   padding: 40px;
-  width: 100%;
+  width: auto;
   height: auto;
   box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 20px;
-  box-shadow: -2px -2px 4px 2px #1b2230;
+  background-color: #505a68;
+
 }
 .package-border {
   margin: 40px 0px;
@@ -347,7 +356,7 @@ span.fa.fa-star.fa-2x.high {
 .contact-form-container .form-content {
   /* backdrop-filter: blur(10px); */
   margin: 0px auto;
-  width: 70%;
+  width: 50%;
   
   padding: 30px;
   border-radius: 10px;
@@ -465,7 +474,7 @@ span.fa.fa-star.fa-2x.high {
     background-color: #363839;
     bottom: 0;
     display: block;
-    padding: 20px 10px;
+    padding: 5px 10px;
     position: sticky;
     width: -webkit-fill-available;
   }
@@ -481,7 +490,7 @@ span.fa.fa-star.fa-2x.high {
   .mobile-bar-container h3{
     padding: 0px 10px;
     color: #fa8c16;
-    font-size: 15px ;
+    font-size: 21px ;
   }
   .mobile-bar-container h5{
     font-size: 15px;
@@ -543,13 +552,8 @@ span.fa.fa-star.fa-2x.high {
     margin: 40px 0px;
   }
  /* mobile bar */
- .mobile-bar-container{
-  display: none ;
-  padding: 20px;
-    position: fixed;
-    width: 100%;
-    background-color: #363839;
-    bottom: 0;
+ .mobile-bar-container {
+  display: none;
 }
 .mobile-bar-container h5{
   text-decoration: line-through;
@@ -588,7 +592,7 @@ span.fa.fa-star.fa-2x.high {
 @media screen and (min-width:1199px) {
 
   .dance-headings{
-    font-size: 64px;
+    font-size: 48px;
   }
 
   .dance-hero-section-container .sub-title {

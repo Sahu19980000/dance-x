@@ -30,15 +30,6 @@ const Left_instructor = (props) => {
               <List_data content={props.feature[4]} />
            </div>
 
-           <div className='col-lg-4 col-md-4'>
-            <Card_box title="5000+" content="Students"/>
-           </div>
-           <div className='col-lg-4 col-md-4'>
-           <Card_box title="450+" content="New style"/>
-           </div>
-           <div className='col-lg-4 col-md-4'>
-           <Card_box title="100+" content="Workshops"/>
-           </div>
            </div>
         </div>
     </div>
