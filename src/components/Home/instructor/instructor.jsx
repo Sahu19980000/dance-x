@@ -13,9 +13,6 @@ const Instructor = (props) => {
     <div className="instructor_container " id="instructor_box">
         <div className="container">
             <div className="row">
-            <div className="logo">
-              <img src={logo} alt="logo" />
-            </div>
                 {/* <div className='section-title text-center'>
                     <Sub_heading title="Course By"/> 
                     <Heading title={props.creatorname} color="#f97738"/>   

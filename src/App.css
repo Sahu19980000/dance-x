@@ -53,7 +53,9 @@ span.fa.fa-star.fa-2x.high {
   letter-spacing: -0.02em;
   text-align: center;
   white-space: pre-wrap;
-  color: #fa8c16;
+  background: linear-gradient(92deg, #F8605E 0.72%, #FA8C16 99.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   /* text-shadow: 0px 2px 2px #020202; */
 }
 
@@ -589,6 +591,9 @@ span.fa.fa-star.fa-2x.high {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  /* header */
+
 }
 
 @media screen and (min-width:1199px) {
@@ -604,6 +609,8 @@ span.fa.fa-star.fa-2x.high {
     color: #f97738;
     line-height: 60px;
   }
+  
+
   .responsive-iframe {
     width: 100%;
   }
@@ -615,3 +622,98 @@ span.fa.fa-star.fa-2x.high {
     height: 100%;
   }
 }
+
+/* header css */
+.dance-xheader {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  background-color: var(--primery-bg-color);
+  height: auto;
+}
+
+.headertabs {
+  display: flex;
+  justify-content: center;
+  border-style: none !important;
+}
+
+#header-tabs .nav-tabs {
+  border: none;
+}
+
+#header-tabs .nav-item {
+  margin-right: 0;
+}
+
+#header-tabs .nav-link {
+  margin-left: 10px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: black;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#header-tabs .nav-link.active {
+  background: linear-gradient(90deg, #fa7e2d 0%, #f54c50 100%);
+  color: white;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  border-radius: 50%;
+}
+
+.profile-text p {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.mobile-bar-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.search-bar {
+  position: relative;
+  width: 50%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fa7e2d;
+  font-size: 1.2rem;
+}
+
+/* dancex_footer_container */
+.dancex_footer_container{
+  padding:20px;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  /* Background color with transparency */ url("./assets/Rectangle4011.png")
+    no-repeat center center fixed;
+background-size: cover;
+  width: 100%;
+  background-color: #121928;
+  height: auto;
+}
+

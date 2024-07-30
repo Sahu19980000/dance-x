@@ -8,7 +8,7 @@ const Button_icon_component = (props) => {
     <div className='dance-button-box' style={{
       
     }}>
-        <button type="submit" className="dance-btn-icon rounded-3" 
+        <button type="submit" className="dance-btn-icon rounded-3 " 
         style={{background:`${props.theme}`,WebkitBackgroundClip:`${props.cliptext}`,WebkitTextFillColor:`${props.textfillcolor}`}}
         >{props.title}
         <img src={icon_light} />

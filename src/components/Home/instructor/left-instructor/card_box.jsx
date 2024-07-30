@@ -6,7 +6,7 @@ const Card_box = (props) => {
         <h2>
             {props.title}
         </h2>
-        <p className='h3'>
+        <p className='h3 '>
             {props.content}
         </p>
     </div>

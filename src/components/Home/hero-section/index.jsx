@@ -37,7 +37,7 @@ const Hero_Section = (props) => {
               <video 
                controls 
                autoPlay 
-               className="responsive-iframe my-5 rounded-3" 
+               className="responsive-iframe my-5 rounded-3 " 
                src={props.video}
                muted
               

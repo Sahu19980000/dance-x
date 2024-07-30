@@ -48,11 +48,12 @@ const Homecomponent = () => {
   return (
     <div className='header-container'>
       <ThemeContext.Provider value={[theme]}>
-       
+
         <Instructor 
           creatorname={api_data.creatorName} 
           feature_data={api_data.keyLearnings} 
         />
+
          <Hero_Section 
           rating={api_data.ratings}
           creatorname={api_data.creatorName} 
@@ -61,6 +62,7 @@ const Homecomponent = () => {
           video={api_data.coursePreviewUrl}
           price={api_data.price}
         />
+        
         <Facts />
 
         <TestimonialCarousel 

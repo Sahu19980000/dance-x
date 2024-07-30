@@ -8,7 +8,7 @@ import Description from "../../../all_shared/description";
 const Left_contemporay = (props) => {
   console.log("left", props.ratingdata);
   return (
-    <div className="left_contemporay_container p-4">
+    <div className="left_contemporay_container p-4 ">
       <img src={contemony_image} className="img-fluid" />
       <div className="d-flex flex-md-row justify-content-center mt-5 flex-column">
         <img src={rating_data} height={50} className="mx-4 contemporay-img-responsive" />
