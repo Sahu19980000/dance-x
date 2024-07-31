@@ -1,8 +1,12 @@
 .firstpage_container{
+  margin: 0;
+  box-sizing: border-box;
   width: 100%;
   background-color: #121928;
   height: auto;
-  padding: 20px;
+  padding: 10px;
+  overflow: hidden;
+
 }
 .firstpage_container .dancer-card-title{
   font-size: 18px;
@@ -52,3 +56,79 @@
   bottom: 0;
   position: absolute;
 }
+
+/* services cards css */
+
+.services_container, .categories_container {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.services_cards {
+  width: auto;
+  height: auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FF0A7F 100%);
+  border-radius: 10px;
+  /* overflow: hidden; */
+  position: relative;
+  margin-left:100px;
+  margin-right: -80px;
+}
+
+.services_cards img {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services_info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+.services_info .description_title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* featured_services_container */
+.featured_services_container{
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.categories_card_one, .categories_card_two,.categories_card_three ,.categories_card_four {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-image: url('../../assets/Image.png');
+}
+.categories_card_two{
+  background-image: url('../../assets/Card\ 2.png');
+}
+.categories_card_three{
+  background-image: url('../../assets/Card\ 3.png');
+}
+.categories_card_one .description-box 
+, .categories_card_two .description-box 
+, .categories_card_three .description-box,
+.categories_card_four .description-box {
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom:-100px;
+
+}
+
+
