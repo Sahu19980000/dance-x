@@ -643,6 +643,7 @@ span.fa.fa-star.fa-2x.high {
 }
 
 #header-tabs .nav-item {
+  width:50%;
   margin-right: 0;
 }
 
@@ -682,7 +683,7 @@ span.fa.fa-star.fa-2x.high {
 
 .search-bar {
   position: relative;
-  width: 50%;
+  width: 80%;
 }
 
 .search-bar input {

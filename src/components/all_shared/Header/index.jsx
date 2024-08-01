@@ -10,13 +10,13 @@ const Header_components = () => {
     <div className="dance-xheader">
       <div className="container-fluid">
         <div className="row py-4 align-items-center">
-          <div className="col-md-2">
+          <div className="col-md-2 col-4">
             <img src={logo} className="img-fluid" height="50" width="150" />
           </div>
-          <div className="col-md-7 d-flex justify-content-center">
+          <div className="col-md-7 col-8 d-flex justify-content-center">
             <Headertabs />
           </div>
-          <div className="col-md-3 d-flex justify-content-between align-items-center">
+          <div className="col-md-3 col-12 py-4 d-flex justify-content-between align-items-center">
             <div className="profile-container d-flex align-items-center">
               <img
                 src={profile_icon}
@@ -58,7 +58,7 @@ const Header_components = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12 d-flex justify-content-center">
+          <div className="col-md-12 col-12 d-flex justify-content-center">
             <div className="search-bar">
               <input
                 type="text"

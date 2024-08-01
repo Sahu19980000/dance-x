@@ -43,7 +43,7 @@
   border-radius: 50px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(14, 13, 13, 0.47) 100%);
   position: relative;
-  height: 50%;
+  height: 100%;
   width: 23%;
 }
 .standout-container .pickcard_container .pick_card-img{
@@ -129,6 +129,12 @@
   width: 100%;
   bottom:-100px;
 
+}
+
+@media screen and (max-width:767px) {
+  .services_cards .description-text{
+     font-size: 16px;
+  }
 }
 
 

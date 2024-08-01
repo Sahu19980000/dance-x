@@ -6,6 +6,7 @@ import Header_components from './components/all_shared/Header';
 import Homecomponent from './components/Home/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Firstpage from './components/firstpage';
+import Page_details from './components/page_details';
 
 
 
@@ -15,9 +16,9 @@ function App() {
       <Header_components />
       <BrowserRouter>
          <Routes>
-           <Route path="/" element={<Firstpage />}></Route>
+          <Route path="/" element={<Firstpage />}></Route>
            <Route path="/course" element={<Homecomponent />}></Route>
-           
+           <Route path="/details" element={<Page_details />}></Route>
          </Routes>
       </BrowserRouter>
       

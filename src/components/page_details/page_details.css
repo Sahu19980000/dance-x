@@ -1,0 +1,11 @@
+.page_details_container{
+    padding: 40px 0px;
+   border-top:1px solid #969696;
+  width:100%;
+  height:80vh;
+  background-color: #121928;
+}
+.freestyle-cards{
+    width:100px;
+    height: 200px;
+}
