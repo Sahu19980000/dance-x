@@ -1,11 +1,92 @@
 .page_details_container{
     padding: 40px 0px;
-   border-top:1px solid #969696;
-  width:100%;
-  height:80vh;
-  background-color: #121928;
+    border-top:1px solid #969696;
+    width:100%;
+    height:auto;
+    background-color: #121928;
 }
 .freestyle-cards{
-    width:100px;
-    height: 200px;
+    width:100%;
+    height: auto;
 }
+
+/* second section css */
+
+  .dance-x {
+    color: #fff;
+  }
+  
+  .dance-x .img-thumbnail {
+    max-width: 25%;
+    cursor: pointer;
+    margin:10px;
+  }
+  
+  .dance-x h2,
+  .dance-x h3,
+  .dance-x h4 {
+    color: #ff6600;
+  }
+  
+  .dance-x p {
+    color: #bbb;
+  }
+  
+  .dance-x .btn-danger {
+    background-color: #ff6600;
+    border-color: #ff6600;
+  }
+  
+  .dance-x .btn-danger:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+  }
+
+/* customer reviews css */
+.customer-reviews {
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .customer-reviews h2 {
+    color: #ff6600;
+  }
+  
+  .customer-reviews .card {
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+  }
+  
+  .customer-reviews .card-title {
+    color: #ff6600;
+  }
+  
+  .customer-reviews .card-text {
+    color: #1f1616;
+  }
+  
+  .rating-bar .progress {
+    height: 10px;
+  }
+  
+  .rating-bar .progress-bar {
+    background: linear-gradient(92deg, #F8605E 0.72%, #FA8C16 99.81%);
+
+    /* background-color: #ff6600; */
+  }
+
+  .testimonial_cards{
+    border-radius: 10px;
+    padding: 35px;
+    border:1px solid #e65c00;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* faq-container css */
+  .faq-container{
+    width: 100%;
+    height: 100%;
+  }
+  
