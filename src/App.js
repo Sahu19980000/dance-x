@@ -7,6 +7,7 @@ import Homecomponent from './components/Home/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Firstpage from './components/firstpage';
 import Page_details from './components/page_details';
+import Profie_section from './components/profie_page';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Firstpage />}></Route>
            <Route path="/course" element={<Homecomponent />}></Route>
            <Route path="/details" element={<Page_details />}></Route>
+           <Route path="/profile" element={<Profie_section />}></Route>
          </Routes>
       </BrowserRouter>
       

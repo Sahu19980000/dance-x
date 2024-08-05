@@ -1,0 +1,56 @@
+:root {
+  --primery-bg-color: #121928;
+}
+
+.profile-header {
+    width: 100%;
+    background-image: url('../../assets/banner.png');
+    padding: 20px 0;
+    background-size: cover;
+    padding: 120px 0px;
+    background-color: #9c9ea1;
+  }
+  .profile-details {
+    width: 100%;
+    height: auto;
+    background-color: var(--primery-bg-color);
+    margin: 0;
+    padding: 0px 5em;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+  }
+  .profile-stats{
+    width: 100%;
+    height: 100%;
+  }  
+
+  .profile-stats span {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+ 
+  
+  .skills-section {
+    margin-top: 20px;
+  }
+  
+  .skills-images img {
+    width: 100%;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  .portfolio-pictures {
+    padding: 20px 0;
+  }
+  
+  .portfolio-pictures img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
