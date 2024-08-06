@@ -6,10 +6,10 @@ import "./profile.css";
 
 const Profie_section = () => {
   return (
-    <div>
+    <div className='profile-section'>
          <ProfileHeader />
-      <ProfileDetails />
-      {/* <PortfolioPictures /> */}
+         <ProfileDetails />
+         <PortfolioPictures />
     </div>
   )
 }
