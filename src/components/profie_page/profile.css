@@ -3,7 +3,7 @@
 }
 
 .profile-section{
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   background-color: var(--primery-bg-color);
 }

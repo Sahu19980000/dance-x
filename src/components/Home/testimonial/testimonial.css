@@ -1,7 +1,7 @@
 
 .testimonial-carousel .slick-prev {
     right: 0 !important;
-    left:95%
+    left:85%
 }
 .testimonial-carousel .slick-prev,.testimonial-carousel .slick-next {
     background: linear-gradient(180deg, #4FF0F8 0%, #3693FD 100%) !important;
@@ -10,7 +10,7 @@
     font-size: 0;
     line-height: 0;
     position: absolute;
-    top: -14%;
+    top: -18%;
     display: block;
     width: 20px;
     height: 20px;
@@ -21,6 +21,7 @@
     border-radius:50px ;
     outline: none;
     background: transparent;
+    margin: 0;
 }
 .testimonial-carousel .dance-button-box {
     display: flex;
@@ -39,12 +40,11 @@
 
 }
 .testimonial-carousel .profile-section .responsive-iframe {
-    
-    
     width: 100%;
     height: 100%;
     border: none;
   }
+
 @media screen and (max-width:767px) {
     .testimonial-carousel .slick-prev{
         left:70%;

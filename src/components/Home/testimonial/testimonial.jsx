@@ -1,5 +1,5 @@
 // src/components/TestimonialCarousel.js
-import "./testimonial.css"
+import "./testimonial.css";
 import React from "react";
 import testimonial_one from "../../../assets/testimonial/testimonial-one.png";
 import testimonial_two from "../../../assets/testimonial/testimonial-two.png";
@@ -21,27 +21,29 @@ const testimonials = [
     id: 1,
     name: "Rachael Schumm",
     year: "Mumbai - 2020",
-    message: "Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.  Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.",
+    message:
+      "Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.  Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.",
     image: `${testimonial_one}`,
-    other_testimonial:[
-       `${testimonial_two}`,
-       `${testimonial_three}`,
-       `${testimonial_four}`,
-       `${testimonial_four}`
-    ]
+    other_testimonial: [
+      `${testimonial_two}`,
+      `${testimonial_three}`,
+      `${testimonial_four}`,
+      `${testimonial_four}`,
+    ],
   },
   {
     id: 2,
     name: "Rohit Schumm",
     year: "2024",
-    message: "Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.  Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.",
+    message:
+      "Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.  Molestias ut tenetur eos placeat aliquam quaerat cumque. Quis autem id sed doloribus eos et enim et dolor.",
     image: `${testimonial_one}`,
-    other_testimonial:[
+    other_testimonial: [
       `${testimonial_two}`,
       `${testimonial_three}`,
       `${testimonial_four}`,
-       `${testimonial_four}`
-   ]
+      `${testimonial_four}`,
+    ],
   },
   // Add more testimonials here
 ];
@@ -60,42 +62,53 @@ const TestimonialCarousel = (props) => {
   return (
     <div className="testimonial-carousel">
       <div className="container-fluid p-md-5 py-5">
-      <Sub_heading title="TESTIMONIAL" />
+        <Sub_heading title="TESTIMONIAL" />
         <Heading title="What our student says" color="#f97738" />
-        <Slider {...settings}>
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="testimonial-slide">
-              <div className="row">
-                <div className="col-lg-6 profile-section" >
-                  {console.log(props.poster)}
-                  <video controls className="responsive-iframe"  src={props.video} poster={props.poster} height={450}>
-                  <img src={playvideo} className="play-video" alt="Play Video" />
-                  </video>
-                </div>
-                <div className="col-lg-6">
+        <div className="row">
+          <div className="col-md-6 profile-section">
+            {console.log(props.poster)}
+            <video
+              controls
+              className="responsive-iframe"
+              src={props.video}
+              poster={props.poster}
+              height={450}
+            >
+              <img src={playvideo} className="play-video" alt="Play Video" />
+            </video>
+          </div>
+          <div className="col-md-6">
+            <Slider {...settings}>
+              {testimonials.map((testimonial) => (
+                <div key={testimonial.id} className="testimonial-slide">
                   <div className="testimonial-content text-start">
                     <Sub_heading title={testimonial.name} />
                     <Description title={testimonial.year} />
-                    <Description title={testimonial.message} size="15px"/>
-                    <ul className="d-flex my-2 mx-0 " style={{listStyleType:'none' ,textAlign:"start"}}>
-                    {testimonial.other_testimonial.map((item, index) => (
-                     <li key={index} className="my-3">
-                    <img src={item} className="m-2"/>
-                     </li>
+                    <Description title={testimonial.message} size="15px" />
+                    <ul
+                      className="d-flex my-2 mx-0 "
+                      style={{ listStyleType: "none", textAlign: "start" }}
+                    >
+                      {testimonial.other_testimonial.map((item, index) => (
+                        <li key={index} className="my-3">
+                          <img src={item} className="m-2" />
+                        </li>
                       ))}
                     </ul>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-        <div className="col-lg-12">
-                  <Button_icon_component title="View All"
-                  theme='-webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16)' 
-                  cliptext="none " 
-                  textfillcolor="none"
-                  />
+              ))}
+            </Slider>
+          </div>
+
+          <div className="col-lg-12 m-4">
+            <Button_icon_component
+              title="View All"
+              theme="-webkit-linear-gradient(180deg, #F8605E 0%, #FA8C16)"
+              cliptext="none "
+              textfillcolor="none"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -118,7 +131,7 @@ const SamplePrevArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, display: "block", background: "green"}}
       onClick={onClick}
     />
   );
