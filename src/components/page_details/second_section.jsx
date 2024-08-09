@@ -24,11 +24,8 @@ const DanceProfile = () => {
     return (
       <div className="container dance-x">
         <div className="row mb-4">
-          <div className="col-12 d-flex justify-content-between">
-            <div>
+          <div className="col-12 d-flex flex-wrap justify-content-between">
             <img src={image_card_one} alt="Video Thumbnail" className="img-thumbnail" onClick={() => handleShow('video_url1.mp4')} />
-            </div>
-           
             <img src={image_card_two} alt="Video Thumbnail" className="img-thumbnail" onClick={() => handleShow('video_url2.mp4')} />
             <img src={image_card_one} alt="Video Thumbnail" className="img-thumbnail" onClick={() => handleShow('video_url3.mp4')} />
             <img src={image_card_two} alt="Video Thumbnail" className="img-thumbnail" onClick={() => handleShow('video_url4.mp4')} />
